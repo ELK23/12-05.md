@@ -38,11 +38,14 @@ select distinct concat(c.last_name, ' ', c.first_name), sum(p.amount) over (part
 from payment p, rental r, customer c, inventory i, film f
 where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and r.customer_id = c.customer_id and i.inventory_id = r.inventory_id
 ```
+перечислите узкие места;
+оптимизируйте запрос: внесите корректировки по использованию операторов, при необходимости добавьте индексы.
+![image](https://github.com/user-attachments/assets/770eceea-ab84-43ef-b0ea-fe14dc4c90f4)
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
+
+1. `Временная таблица`
+2. `table scan`
+3. `Используется больше рядов чем нужно`
 5. `Заполните здесь этапы выполнения, если требуется ....`
 6. 
 
