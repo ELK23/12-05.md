@@ -51,4 +51,6 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
 
 
 
-![image](https://github.com/user-attachments/assets/b0e583ef-5d7a-4a9d-9565-33657102bb04)
+![image](https://github.com/user-attachments/assets/fb8004fa-b51d-4acf-a6d0-eea3ffb11ada)
+![image](https://github.com/user-attachments/assets/cc06e92f-8416-4553-b22c-6026db552926)
+
